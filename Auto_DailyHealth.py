@@ -34,14 +34,16 @@ if __name__ == "__main__":
     password = '***'
     login(id, password)
     # 打开健康日报界面
-    driver.get("http://e-office2.nuist.edu.cn/taskcenter/workflow/index")
     driver.get("http://e-office2.nuist.edu.cn/infoplus/form/XNYQSB/start")
+    time.sleep(5)
     # 输入体温并确认
     driver.find_element_by_css_selector("input[name='fieldCNS']").click()
     driver.find_element_by_css_selector("input[name='fieldSTQKfrtw']").send_keys("36.1")
+    time.sleep(3)
     driver.execute_script("$('nobr:contains(确认填报)').click()")
-    time.sleep(5)
+    time.sleep(3)
     driver.find_element_by_css_selector("button.dialog_button.default.fr").click()
+    time.sleep(3)
     final = driver.find_element_by_css_selector("button.dialog_button.default.fr")
     final.click()
     # 关闭实例
