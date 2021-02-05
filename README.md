@@ -1,0 +1,2 @@
+# NUIST_Auto_DailyHealth
+基于Python3.8和Selenium的南信大健康日报自动化脚本
