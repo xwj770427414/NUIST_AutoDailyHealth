@@ -1,4 +1,4 @@
-# NUIST_Auto_DailyHealth
+# NUIST_AutoDailyHealth
 基于Python3.8和Selenium的南信大健康日报自动化脚本
 ## 环境配置
 - Python3.X
